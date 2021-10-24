@@ -11,12 +11,29 @@
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+      .with-background-image {
+        background-color: black;
+        background-image: url(/assets/img/background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: contain;
+      }
+      .balkanartz-color {
+        background-color: #89741E;
+      }
+
+    </style>
 
     <script>
       $(function() {
-        $('.button.concerts-archive').click(function() {
-          $('.modal.concerts-archive').modal('show');
-        });
+        $('.ui.accordion')
+          .accordion()
+        ;
+        //  $('.button.concerts-archive').click(function() {
+        //    $('.modal.concerts-archive').modal('show');
+        //  });
       });
     </script>
   </head>
